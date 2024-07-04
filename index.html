@@ -3,16 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Exploring the DOM</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js" defer></script>
 </head>
 <body>
-    <script src="index.js" defer></script>
-    <div class="myMessage"></div> 
-    <button class="theMessageButton">Show message</button>
-    <input type="text" class="theInputValue">
-    <ul class="fruits"></ul>
-   
-
+    <div class="container">
+        <div class="myMessage">
+            <!-- Initial message displayed -->
+        </div>
+        
+        <button class="showMessageButton">Show Message</button>
+        <button class="removeMessageButton">Remove Message</button>
+        
+        <div class="fruitInputContainer">
+            <input type="text" class="newFruitInput" placeholder="Enter a new fruit">
+            <button class="addFruitButton">Add Fruit</button>
+        </div>
+        
+        <ul class="fruits">
+            <!-- List of fruits will be dynamically populated -->
+        </ul>
+    </div>
 </body>
 </html>
